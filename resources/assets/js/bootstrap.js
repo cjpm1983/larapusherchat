@@ -40,9 +40,16 @@ window.axios.defaults.headers.common = {
 
 import Echo from "laravel-echo";
 
+// window.Echo = new Echo({
+//     broadcaster: 'pusher',
+//     key: Laravel.pusherKey,
+//     cluster: Laravel.pusherCluster,
+//     encrypted: true
+// });
+
 window.Echo = new Echo({
     broadcaster: 'pusher',
-    key: Laravel.pusherKey,
-    cluster: Laravel.pusherCluster,
+    key: '4dc817a00d66dbbd48b2',
+    cluster: 'us2',
     encrypted: true
 });
